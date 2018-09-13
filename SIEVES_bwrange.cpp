@@ -3,14 +3,14 @@
 using namespace std;
 void primecheck(long n1,long n2)
 {
-	bool c[1001];
+	bool c[100001];
 	memset(c,true,sizeof(c));
-	for(int i=2;i<=1000;i++)
+	for(long i=2;i<=100000;i++)
 	if(c[i]==true)
-	for(int j=i*2;j<=1000;j+=i)
+	for(long j=i*2;j<=100000;j+=i)
 	c[j]=false;
 	c[0]=c[1]=false;
-	for(int i=n1+1;i<n2;i++)
+	for(long i=n1+1;i<n2;i++)
 	if(c[i]==true)
 	cout<<i<<' ';
 }
