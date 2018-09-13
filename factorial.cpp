@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-	long n,fact=1;
+	int n;
+	long fact=1;
 	cin>>n;
 	if(cin) {
 	for(long i=n;i>0;i--)
